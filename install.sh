@@ -58,7 +58,7 @@ add_to_lisp_rc() {
     echo "$string" >> "$HOME/$rc"
 }
 
-ASDF_URL="https://raw.githubusercontent.com/luismbo/cl-travis/master/deps/asdf.lisp"
+ASDF_URL="https://raw.githubusercontent.com/glv2/cl-travis/master/deps/asdf.lisp"
 ASDF_LOCATION="$HOME/asdf"
 
 install_asdf() {
@@ -118,8 +118,7 @@ install_abcl() {
     cim use abcl-system --default
 }
 
-SBCL_TARBALL_URL1="http://prdownloads.sourceforge.net/sbcl/sbcl-1.2.13-x86-64-linux-binary.tar.bz2"
-SBCL_TARBALL_URL2="http://cddr.org/ci/sbcl-1.2.13-x86-64-linux-binary.tar.bz2"
+SBCL_TARBALL_URL1="http://prdownloads.sourceforge.net/sbcl/sbcl-1.3.19-x86-64-linux-binary.tar.bz2"
 SBCL_TARBALL="sbcl.tar.bz2"
 SBCL_DIR="$HOME/sbcl"
 
@@ -149,9 +148,7 @@ install_sbcl32() {
     cim use sbcl-system --default
 }
 
-CCL_TARBALL_URL1="ftp://ftp.clozure.com/pub/release/1.10/ccl-1.10-linuxx86.tar.gz"
-CCL_TARBALL_URL2="http://kerno.org/~luis/ci/ccl-1.10-linuxx86.tar.gz"
-CCL_TARBALL_URL3="http://common-lisp.net/~loliveira/tarballs/ci/ccl-1.10-linuxx86.tar.gz"
+CCL_TARBALL_URL1="ftp://ftp.clozure.com/pub/release/1.11/ccl-1.11-linuxx86.tar.gz"
 CCL_TARBALL="ccl.tar.gz"
 CCL_DIR="$HOME/ccl"
 CCL_SCRIPT_PREFIX="/usr/local/bin"
